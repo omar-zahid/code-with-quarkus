@@ -54,4 +54,4 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ env.REPO }}:latest
-          file: src/main/docker/Dockerfile.multistage-micro
+          file: src/main/docker/Dockerfile.native-micro
