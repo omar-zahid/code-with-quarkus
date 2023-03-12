@@ -21,7 +21,7 @@ jobs:
           cache: maven
       - name: Build native
         run: ./mvnw package -Pnative
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: runner
           path: target/*-runner
@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: runner
 
